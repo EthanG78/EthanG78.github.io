@@ -5,47 +5,30 @@
 }
 
 html, body{
-	margin: 0;
-	padding: 0;
-	background-color: #222222;
-	color: #c8c8c8;
+	color: #0000c3;
 	font-family: 'Share Tech Mono', Monospace, Courier;
-	font-size: 65px;
 	font-weight: 400;
+	font-size: 15px;
 	letter-spacing: 0.1px;
 }
 
+div{
+	text-align: center;
+	padding-top: 15%
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+}
+
 a{
+	color: #0000c3;
+	text-decoration-color: #0000c3;
 	text-decoration: none;
-	color: #c8c8c8
 }
 
 a:hover{
 	text-decoration: underline;
-}
-
-li{
-	/*margin: 15px;*/
-	padding: 0;
-	list-style: none;
-}
-
-#header{
-	text-align: center;
-	margin-bottom: 100px;
-}
-
-#headr-text{
-	text-align: center
-	margin: 50px;
-}
-
-#content{
-	font-size: 20px;
-	margin-left: 30%;	
-	margin-right: 30%
-}
-
-.tag{
-	padding-right: 5px;
 }
