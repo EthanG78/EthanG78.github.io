@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--developed by
+	 
+	      _   _                                          _           
+	     | | | |                                        (_)          
+	  ___| |_| |__   __ _ _ __     __ _  __ _ _ __ _ __  _  ___ _ __ 
+	 / _ \ __| '_ \ / _` | '_ \   / _` |/ _` | '__| '_ \| |/ _ \ '__|
+	|  __/ |_| | | | (_| | | | | | (_| | (_| | |  | | | | |  __/ |   
+	 \___|\__|_| |_|\__,_|_| |_|  \__, |\__,_|_|  |_| |_|_|\___|_|   
+	                               __/ |                             
+	                              |___/   
+	    special thank you to dwmkerr for this awesome start field script:
+	    https://github.com/dwmkerr/starfield                           
+	-->
+	<title>ethang</title>
+	<meta name="author" content="Ethan Garnier">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="assets/main.css" />
+</head>
+<body>
+		<div id="container"></div>
+		<div id="info">
+			<img src="images/ethang.png" width="266" height="94">
+			<span style="font-size: 12px;">v4.0</span>
+			<span class="bigText"><p>a computer guy<br/> & entrepreneur</p></span>
+			<a href="https://github.com/EthanG78">github</a> | 
+			<a href="https://www.linkedin.com/in/ethan-garnier-581206157/">linkedin</a> | 
+			<a href="https://www.instagram.com/its_ethang/">instagram</a> | 
+			<a href="mailto:ethan.garnier78@gmail.com">email</a>
+		</div>
+
+		<script src="assets/starfield.js"></script>
+		<script>
+			var container = document.getElementById('container');
+			var starfield = new Starfield();
+			starfield.initialise(container);
+			starfield.stars = Math.random()*3000 + 50;
+			starfield.minVelocity = Math.random()*30+5;
+			starfield.maxVelocity = Math.random()*50 + starfield.minVelocity;			
+			starfield.start();
+		</script>
+</body>
+</html>
